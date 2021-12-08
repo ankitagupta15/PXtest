@@ -25,7 +25,7 @@ function login(){
         {
           //User Fields
          "id": "1", // Required for logged in app users
-         "firstName":username
+         "firstName": username
         },
         {
             //Account Fields
@@ -39,7 +39,7 @@ function login(){
         {
           //User Fields
          "id": "2", // Required for logged in app users
-         "firstName":username
+         "firstName": username
         },
         {
             //Account Fields
@@ -52,7 +52,7 @@ function login(){
         {
           //User Fields
          "id": "3", // Required for logged in app users
-         "firstName":username
+         "firstName": username
         },
         {
             //Account Fields
@@ -66,7 +66,7 @@ function login(){
         {
           //User Fields
          "id": "4", // Required for logged in app users
-         "firstName":username
+         "firstName": username
         },
         {
             //Account Fields
