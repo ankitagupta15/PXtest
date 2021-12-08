@@ -10,6 +10,7 @@ function login(){
     const loginForm = document.getElementById("login-form");
     const loginButton = document.getElementById("login-form-submit");
     const loginErrorMsg = document.getElementById("login-error-msg");
+  
 
     loginButton.addEventListener("click", (e) => {
      // e.preventDefault();
@@ -17,19 +18,51 @@ function login(){
       const password = loginForm.password.value;
 
       if (username === "ankita" || username=== "anku" || username==="gupta" && password === "123") {
-        //passing user and account objects:
+
+        if(username=="ankita"){
+          //passing user and account objects:
         aptrinsic("identify",
         {
           //User Fields
-         "id": username, // Required for logged in app users
-         "firstname":username
+         "id": "1", // Required for logged in app users
+         "firstname":username,
         },
         {
             //Account Fields
             "id":"PXAnkita", //Required
     });
-    alert("You have successfully logged in.");
-    window.location.href="signin.html"
+        }
+
+        if(username=="anku"){
+          //passing user and account objects:
+        aptrinsic("identify",
+        {
+          //User Fields
+         "id": "2", // Required for logged in app users
+         "firstname":username,
+        },
+        {
+            //Account Fields
+            "id":"PXAnkita", //Required
+    });
+        }
+        if(username=="gupta"){
+          //passing user and account objects:
+        aptrinsic("identify",
+        {
+          //User Fields
+         "id": "3", // Required for logged in app users
+         "firstname":username,
+        },
+        {
+            //Account Fields
+            "id":"PXAnkita", //Required
+    });
+        }
+
+        alert("You have successfully logged in.");
+        window.location.href="signin.html"
+
     } else {
         loginErrorMsg.style.opacity = 1;
       }
