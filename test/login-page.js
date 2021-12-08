@@ -12,7 +12,7 @@ function login(){
     const loginErrorMsg = document.getElementById("login-error-msg");
 
     loginButton.addEventListener("click", (e) => {
-      e.preventDefault();
+     // e.preventDefault();
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
