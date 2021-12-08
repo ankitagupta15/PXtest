@@ -17,7 +17,7 @@ function login(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
-      if (username === "ankita" || username=== "anku" || username==="gupta" && password === "123") {
+      if (username == "ankita" || username== "anku" || username=="gupta" && password == "123") {
 
         if(username=="ankita"){
           //passing user and account objects:
