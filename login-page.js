@@ -17,7 +17,7 @@ function login(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
-      if (username == "ankita" || username== "anku" || username=="gupta" && password == "123") {
+      if (username == "ankita" || username== "anku" || username=="gupta" || username=="a" && password == "123") {
 
         if(username=="ankita"){
           //passing user and account objects:
@@ -52,6 +52,20 @@ function login(){
         {
           //User Fields
          "id": "3", // Required for logged in app users
+         "firstname":username,
+        },
+        {
+            //Account Fields
+            "id":"PXAnkita", //Required
+    });
+        }
+
+        if(username=="a"){
+          //passing user and account objects:
+        aptrinsic("identify",
+        {
+          //User Fields
+         "id": "4", // Required for logged in app users
          "firstname":username,
         },
         {
