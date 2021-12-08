@@ -22,6 +22,7 @@ function login(){
         {
           //User Fields
          "id": username, // Required for logged in app users
+         "firstname":username
         },
         {
             //Account Fields
