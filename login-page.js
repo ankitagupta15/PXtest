@@ -13,11 +13,14 @@ function login(){
   
 
     loginButton.addEventListener("click", (e) => {
-     // e.preventDefault();
+      e.preventDefault();
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
       if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123")) {
+
+        alert("You have successfully logged in.");
+        window.location.href="signin.html"
 
         if(username=="ankita"){
           //passing user and account objects:
@@ -73,10 +76,6 @@ function login(){
             "id":"PXAnkita", //Required
     });
         }
-
-        alert("You have successfully logged in.");
-        window.location.href="signin.html"
-
     } else {
         loginErrorMsg.style.opacity = 1;
       }
