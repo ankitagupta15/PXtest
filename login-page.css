@@ -3,6 +3,7 @@ html {
   }
   
   body {
+    margin: 0;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -66,9 +67,11 @@ html {
 
   header{
     background: #b3b3b1;
-    height: 10%;
+    height: 80px;
     width: 100%;
     position: absolute;
+    margin: 0%;
+    border: 0px;
   }
 
   #mypage{
@@ -99,7 +102,7 @@ html {
   
   #main-holder {
     padding-top: 5%;
-    background-color: white;
+    background-color: #ffffff;
   }
 
   #welcome{
