@@ -83,6 +83,13 @@ function login(){
     })
 }
 
+function feedback(){
+  document.getElementById("login-form-submit").addEventListener("click", a);
+  function a(){
+    alert("button is  clicked");
+  }
+}
+
 //logout function
 function logout(){
     document.getElementById("logout").addEventListener("click", a);
