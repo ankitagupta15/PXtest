@@ -84,8 +84,8 @@ function login(){
 }
 
 function feedback(){
-  document.getElementById("login-form-submit").addEventListener("click", a);
-  function a(){
+  document.getElementById("login-form-submit").addEventListener("click", b);
+  function b(){
     alert("button is  clicked");
   }
 }
