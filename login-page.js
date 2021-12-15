@@ -17,7 +17,7 @@ function login(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
-      if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123")) {
+      if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123") || (username === "mishti" && password === "aaa")) {
 
         alert("You have successfully logged in.");
         window.location.href="signin.html"
