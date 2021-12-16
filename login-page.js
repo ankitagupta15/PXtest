@@ -76,6 +76,21 @@ function login(){
             "id":"PXAnkita", //Required
     });
         }
+
+        if(username=="mishti"){
+          //passing user and account objects:
+        aptrinsic("identify",
+        {
+          //User Fields
+         "id": "5", // Required for logged in app users
+         "firstName": username
+        },
+        {
+            //Account Fields
+            "id":"PXAnkita", //Required
+    });
+        }
+        
     } else {
         loginErrorMsg.style.opacity = 1;
       }
