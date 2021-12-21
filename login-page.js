@@ -31,7 +31,6 @@ window['_fs_namespace'] = 'FS';
 })(window,document,window['_fs_namespace'],'script','user');
 
 //login function
-function login(){
     const loginForm = document.getElementById("login-form");
     const loginButton = document.getElementById("login-form-submit");
     const loginErrorMsg = document.getElementById("login-error-msg");
@@ -130,14 +129,6 @@ function login(){
       }
       
     })
-}
-
-function feedback(){
-  document.getElementById("login-form-submit").addEventListener("click", b);
-  function b(){
-    alert("button is  clicked");
-  }
-}
 
 //logout function
 function logout(){
