@@ -129,6 +129,11 @@ window['_fs_namespace'] = 'FS';
       }
       
     })
+//feedback function
+
+function feedback(){
+  document.getElementById("feedback").innerHTML = "Feedback Button Clicked";
+}
 
 //logout function
 function logout(){
