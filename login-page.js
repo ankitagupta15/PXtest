@@ -140,6 +140,7 @@ window['_fs_namespace'] = 'FS';
 //feedback function
 
 function feedback(){
+  aptrinsic('set', 'globalContext', {"name":"GlobalContext"});
   document.getElementById("feedback").innerHTML = "Feedback Button Clicked";
 }
 
