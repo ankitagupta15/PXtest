@@ -99,6 +99,7 @@ window['_fs_namespace'] = 'FS';
             //Account Fields
             "id":"PXAnkita", //Required
     });
+    aptrinsic('set', 'globalContext', {"name":"GlobalContext"});
         }
 
         if(username=="mishti"){
@@ -123,15 +124,6 @@ window['_fs_namespace'] = 'FS';
       // https://help.fullstory.com/hc/en-us/articles/360020623294-FS-setUserVars-Recording-custom-user-data
       reviewsWritten_int: 14
     });
-        // Setting Global Context
-        // Track UI version and runtime
-
-      aptrinsic('set', 'globalContext', {"version":12345, "name":"Salesforce", "type":"Iframe"});
-      aptrinsic('set', 'globalContext', {"version":555, "name":"NXT"});
-
-      //Track an object:
-      aptrinsic('set', 'globalContext', {"projectId":12345,"Project Type" :"Work Order",
-      "Project Date":"2018-03-08T18:11:00Z" });
     } else {
         loginErrorMsg.style.opacity = 1;
       }
@@ -140,7 +132,6 @@ window['_fs_namespace'] = 'FS';
 //feedback function
 
 function feedback(){
-  aptrinsic('set', 'globalContext', {"name":"GlobalContext"});
   document.getElementById("feedback").innerHTML = "Feedback Button Clicked";
 }
 
@@ -153,6 +144,8 @@ function logout(){
         window.aptrinsic('reset');
     }
 }
+
+
 
 //delete cookies
 /*function deleteAllCookies() {
