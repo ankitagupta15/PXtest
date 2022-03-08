@@ -99,7 +99,6 @@ window['_fs_namespace'] = 'FS';
             //Account Fields
             "id":"PXAnkita", //Required
     });
-    aptrinsic('set', 'globalContext', {"name":"GlobalContext"});
         }
 
         if(username=="mishti"){
