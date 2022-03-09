@@ -36,8 +36,8 @@ window['_fs_namespace'] = 'FS';
     const loginErrorMsg = document.getElementById("login-error-msg");
   
 
-    loginButton.addEventListener("click", (e) => {
-      e.preventDefault();
+    loginButton.addEventListener("click",
+      function(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
@@ -126,7 +126,6 @@ window['_fs_namespace'] = 'FS';
     } else {
         loginErrorMsg.style.opacity = 1;
       }
-      
     })
 //feedback function
 
