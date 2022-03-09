@@ -32,12 +32,10 @@ window['_fs_namespace'] = 'FS';
 
 //login function
     const loginForm = document.getElementById("login-form");
-    const loginButton = document.getElementById("login-form-submit");
     const loginErrorMsg = document.getElementById("login-error-msg");
   
 
-    loginButton.addEventListener("click",
-      function(){
+    function signIn(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
@@ -126,9 +124,9 @@ window['_fs_namespace'] = 'FS';
     } else {
         loginErrorMsg.style.opacity = 1;
       }
-    })
-//feedback function
+    }
 
+//feedback function
 function feedback(){
   document.getElementById("feedback").innerHTML = "Feedback Button Clicked";
 }
