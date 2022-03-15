@@ -39,7 +39,7 @@ window['_fs_namespace'] = 'FS';
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
-      if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123") || (username === "mishti" && password === "aaa")) {
+      if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123") || (username === "mishti" && password === "aaa") || (username === "Pratap" && password === "aaa")) {
 
         alert("You have successfully logged in.");
         window.location.href="signin.html"
@@ -110,6 +110,20 @@ window['_fs_namespace'] = 'FS';
         {
             //Account Fields
             "id":"PXAnkita", //Required
+    });
+        }
+
+        if(username=="Pratap"){
+          //passing user and account objects:
+        aptrinsic("identify",
+        {
+          //User Fields
+         "id": "10", // Required for logged in app users
+         "firstName": username
+        },
+        {
+            //Account Fields
+            "id":"demoAccount", //Required
     });
         }
 
