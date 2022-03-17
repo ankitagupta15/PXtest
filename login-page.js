@@ -51,7 +51,7 @@ window['_fs_namespace'] = 'FS';
           //User Fields
          "id": "1", // Required for logged in app users
          "firstName": username,
-         "signUpDate": 06/01/2021
+         "signUpDate": 1647531952
         },
         {
             //Account Fields
