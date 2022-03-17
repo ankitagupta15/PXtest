@@ -50,7 +50,7 @@ window['_fs_namespace'] = 'FS';
         {
           //User Fields
          "id": "1", // Required for logged in app users
-         "firstName": username,
+         "firstName": username
         },
         {
             //Account Fields
