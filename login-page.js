@@ -142,7 +142,7 @@ window['_fs_namespace'] = 'FS';
 
 //feedback function
 function feedback(){
-  document.getElementById("feedback").innerHTML = "Feedback Button Clicked";
+  document.getElementById("feedback").innerHTML = "Feedback Button is Clicked";
 }
 
 //logout function
