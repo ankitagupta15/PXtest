@@ -151,15 +151,15 @@ function logout(){
     function a(){
         alert("You have successfully logged out.");
         window.location.href="index.html"
-        window.aptrinsic('reset');
+        deleteAllCookies();
     }
 }
 
 
 
 //delete cookies
-/*function deleteAllCookies() {
+function deleteAllCookies() {
     window.aptrinsic('reset');
     counter = 0;
-}*/
+}
 //add in logout btn onclick="deleteAllCookies()"
