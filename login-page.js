@@ -155,7 +155,9 @@ function logout(){
     }
 }
 
-
+function newpage(){
+  window.location.href="signin.html"
+}
 
 //delete cookies
 function deleteAllCookies() {
