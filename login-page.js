@@ -156,8 +156,7 @@ function logout(){
 }
 
 function newpage(){
-  //window.location.href="signin.html"
-  document.getElementById("engagement").innerHTML = "Button is Clicked";
+  window.location.href="signin.html"
 }
 
 //delete cookies
