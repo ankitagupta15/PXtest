@@ -156,12 +156,13 @@ function logout(){
 }
 
 function newpage(){
-  window.location.href="signin.html"
+  //window.location.href="signin.html"
+  document.getElementById("engagement").innerHTML = "Button is Clicked";
 }
 
 //delete cookies
 function deleteAllCookies() {
     window.aptrinsic('reset');
-    counter = 0;
+   // counter = 0;
 }
 //add in logout btn onclick="deleteAllCookies()"
