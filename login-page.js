@@ -162,6 +162,6 @@ function newpage(){
 //delete cookies
 function deleteAllCookies() {
     window.aptrinsic('reset');
-   // counter = 0;
+    counter = 0;
 }
 //add in logout btn onclick="deleteAllCookies()"
