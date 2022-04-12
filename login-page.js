@@ -162,7 +162,7 @@ function newpage(){
 
 //delete cookies
 function deleteAllCookies() {
-    window.aptrinsic('reset');
-    counter = 0;
+  document.cookie = 'apt.uid=; Domain=.ankitagupta15.github.io; Path=/;';
+  document.cookie = 'apt.sid=; Domain=.ankitagupta15.github.io; Path=/;';
 }
 //add in logout btn onclick="deleteAllCookies()"
