@@ -38,6 +38,22 @@ window['_fs_namespace'] = 'FS';
     function signIn(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
+      const acctID = {
+          acct1: "PXAnkita",
+          acct2: "demoAccount",
+      }
+      const acctName= {
+        acct1: "PXaccount",
+        acct2: "Account 2"
+      }
+      const userId = {
+        ID1: "1",
+        ID2: "2",
+        ID3: "3",
+        ID4: "4",
+        ID5: "5",
+        ID10: "10"
+    }
 
       if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123") || (username === "mishti" && password === "aaa") || (username === "Pratap" && password === "aaa")) {
 
@@ -49,13 +65,14 @@ window['_fs_namespace'] = 'FS';
         aptrinsic("identify",
         {
           //User Fields
-         "id": "1", // Required for logged in app users
+         "id": userId.ID1, // Required for logged in app users
          "firstName": username,
          "paidUser": true
         },
         {
             //Account Fields
-            "id":"PXAnkita", //Required
+            "id":acctID.acct1, //Required
+            "name": acctName.acct1
     });
         }
 
@@ -64,12 +81,13 @@ window['_fs_namespace'] = 'FS';
         aptrinsic("identify",
         {
           //User Fields
-         "id": "2", // Required for logged in app users
-         "firstName": username
+         "id": userId.ID2, // Required for logged in app users
+         "firstName": username,
         },
         {
             //Account Fields
-            "id":"PXAnkita", //Required
+            "id":acctID.acct1, //Required
+            "name": acctName.acct1
     });
         }
         if(username=="gupta"){
@@ -77,12 +95,13 @@ window['_fs_namespace'] = 'FS';
         aptrinsic("identify",
         {
           //User Fields
-         "id": "3", // Required for logged in app users
-         "firstName": username
+         "id": userId.ID3, // Required for logged in app users
+         "firstName": username,
         },
         {
             //Account Fields
-            "id":"PXAnkita", //Required
+            "id":acctID.acct1, //Required
+            "name": acctName.acct1
     });
         }
 
@@ -90,13 +109,14 @@ window['_fs_namespace'] = 'FS';
           //passing user and account objects:
         aptrinsic("identify",
         {
-          //User Fields
-         "id": "4", // Required for logged in app users
-         "firstName": username
+         //User Fields
+         "id": userId.ID4, // Required for logged in app users
+         "firstName": username,
         },
         {
             //Account Fields
-            "id":"PXAnkita", //Required
+            "id":acctID.acct1, //Required
+            "name": acctName.acct1
     });
         }
 
@@ -105,12 +125,13 @@ window['_fs_namespace'] = 'FS';
         aptrinsic("identify",
         {
           //User Fields
-         "id": "5", // Required for logged in app users
-         "firstName": username
+         "id": userId.ID5, // Required for logged in app users
+         "firstName": username,
         },
         {
             //Account Fields
-            "id":"PXAnkita", //Required
+            "id":acctID.acct1, //Required
+            "name": acctName.acct1
     });
         }
 
@@ -119,12 +140,13 @@ window['_fs_namespace'] = 'FS';
         aptrinsic("identify",
         {
           //User Fields
-         "id": "10", // Required for logged in app users
-         "firstName": username
+         "id": userId.ID10, // Required for logged in app users
+         "firstName": username,
         },
         {
             //Account Fields
-            "id":"demoAccount", //Required
+            "id":acctID.acct2, //Required
+            "name": acctName.acct2
     });
         }
 
