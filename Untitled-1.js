@@ -17,6 +17,28 @@ For Production Instance
 //   }}();
 
 
+function _px_getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+const PX_COOKIE = "apt.uid";
+var cookieParts = _px_getCookie(PX_COOKIE).split('.')
+var anonymous = cookieParts.length != 4 || cookieParts[2] === "0"
+console.log("anonymous:" + anonymous + cookieParts);
+
+
+
 //    Adding JQuery
 var head = document.getElementsByTagName('head')[0];
 var script = document.createElement('script');
@@ -51,6 +73,10 @@ var configone = {
     filterUrls: ["*/About.HTML"],
     filterType: "mask"
 };
+
+var configthree = {
+    kcAllowedFuncNames: ["launchZendeskChat"]
+};
 (function (n, t, a, e, co) {
     var i = "aptrinsic";
     n[i] = n[i] || function () {
@@ -61,14 +87,27 @@ var configone = {
     r.async = !0, r.src = a + "?a=" + e;
     var c = t.getElementsByTagName("script")[0];
     c.parentNode.insertBefore(r, c)
-})(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-6WAJA3OATHHI-2"
+})(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-6WAJA3OATHHI-2",configthree   
     // {
     //     "htmlSanitization": true,
     //     "htmlSanitizationAllowedDomains": ["https://dileepnalla.github.io"],    
     //     "engagementChecksumFileUrl": "https://raw.githubusercontent.com/DileepNalla/Basic_html/master/checksums.json"
     //     }
+     //AP-6WAJA3OATHHI-2
+    //AP-GT3SCXV8B3YW-2 -- Product 1 Tag key
+    
+    //AP-HHUVBADW9YGV-2 -- Product 2 Tag key
 
 )
+
+if (anonymous) {
+    aptrinsic("identify", {
+        //User Fields
+        "id": "fake-user-id" // Required for logged in app users
+    })
+}
+
+
 
 //AP-6WAJA3OATHHI-2, AP-DRTELDXGAMXI-2 Replace this later on after testing by Zendesk
 
@@ -174,6 +213,9 @@ window['_fs_namespace'] = 'FS';
 //   var i="aptrinsic";n[i]=n[i]||function(){ (n[i].q=n[i].q||[]).push(arguments)},
 //   n[i].p = e; n[i].c = x; var r= t.createElement("script"); r.async=!0, r.src=a+"?a="+e; var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)}) (window, document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-6WAJA3OATHHI-2",configtwo);
 
+
+
+
 function callglobal() //https://share.vidyard.com/watch/9DHjPPiqZQc7czUnjorcxA?
 {
     aptrinsic('set', 'globalContext', {
@@ -183,8 +225,14 @@ function callglobal() //https://share.vidyard.com/watch/9DHjPPiqZQc7czUnjorcxA?
 }
 
 function loadContactPage() {
-    aptrinsic('set', 'globalContext', {"page": "Contactpage","name":"Welcome Video","Category":"Onboarding"});
-    aptrinsic('set', 'globalContext', {"demo": "GC2" });
+    aptrinsic('set', 'globalContext', {
+        "page": "Contactpage",
+        "name": "Welcome Video",
+        "Category": "Onboarding"
+    });
+    aptrinsic('set', 'globalContext', {
+        "demo": "GC2"
+    });
 }
 
 function loadAboutusPage() {
@@ -198,6 +246,23 @@ function showengagement() {
         "ID_required": true
     });
 }
+
+function launchZendeskChat() {
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.id = "ze-snippet"
+    script.src = "https://static.zdassets.com/ekr/snippet.js?key=b153014d-0b56-4fef-a6d3-dae44d8fb6bb";
+    script.onreadystatechange = handler1;
+    script.onload = handler1;
+    // Fire the loading
+    head.appendChild(script);
+
+    function handler1() {
+        console.log('Chat Bot added :)');
+    }
+
+}
+
 
 
 
@@ -236,9 +301,9 @@ function allowlogin(usermail) {
             if (a == 'dileepnalla29@gmail.com') {
                 aptrinsic('identify', {
                         //User Fields
-                        "id": "dataloader insert", // Required for logged in app users
+                        "id": "0057F000001wxPcQAIMandiantUsecase", // Required for logged in app users
                         "email": a,
-                        "subscriptionId":"e2cdcaad-5fb9-4239-92a0-1504d5e79b3c"
+                        "subscriptionId": "e2cdcaad-5fb9-4239-92a0-1504d5e79b3c"
 
                         // "userHash": hash.toString()// optional transient for HMAC identification
                     },
@@ -254,7 +319,7 @@ function allowlogin(usermail) {
                         //User Fields
                         "id": id, // Required for logged in app users
                         "email": a,
-                        "subscriptionId":"e2cdcaad-5fb9-4239-92a0-1504d5e79b3c"
+                        "subscriptionId": "e2cdcaad-5fb9-4239-92a0-1504d5e79b3c"
 
                         // "userHash": hash.toString()// optional transient for HMAC identification
                     },
@@ -270,7 +335,7 @@ function allowlogin(usermail) {
                         //User Fields
                         "id": id, // Required for logged in app users
                         "email": a,
-                        "subscriptionId":"e2cdcaad-5fb9-4239-92a0-1504d5e79b3c"
+                        "subscriptionId": "e2cdcaad-5fb9-4239-92a0-1504d5e79b3c"
 
                         // "userHash": hash.toString()// optional transient for HMAC identification
                     },
@@ -286,7 +351,7 @@ function allowlogin(usermail) {
                         //User Fields
                         "id": id, // Required for logged in app users
                         "email": a,
-                        "subscriptionId":"e2cdcaad-5fb9-4239-92a0-1504d5e79b3c"
+                        "subscriptionId": "e2cdcaad-5fb9-4239-92a0-1504d5e79b3c"
 
                         // "userHash": hash.toString()// optional transient for HMAC identification
                     },
@@ -343,7 +408,7 @@ function allowlogin(usermail) {
 
             alert("Logged in user id :" + b);
 
-            window.location = "https://dileepnalla.github.io/Basic_html/Index.HTML"; 
+            window.location = "https://dileepnalla.github.io/Basic_html/Index.HTML";
             aptrinsic('track', 'User Login');
 
         } else
@@ -361,21 +426,27 @@ allowlogin.prototype.greeting = function () {
 };
 
 
+
+aptrinsic('set', 'globalContext', {
+    "Product Name": "Basic HTML"
+});
+
+
 var counter = 0;
 
 // Section - 1: Defining the purchse Process
 
 
-var Productname = "Jeans";
-var Productsize = "Medium";
-var Productprice = 7800;
+var Productname = "ReactJS";
+var Validity = "17-April-2022";
+var Productprice = "$40";
 var transactionStatus = "Success";
 
 
 let purchaseinitiated = new CustomEvent('purchaseinitiated', {
     detail: {
         itemName: this.Productname,
-        itemSize: this.Productsize
+        Validity: this.Validity
     }
 })
 let transactionsuccess = new CustomEvent('transactionsuccess', {
@@ -391,6 +462,8 @@ let feedback = new CustomEvent('feedback')
 // refer this lecture to understand the custom events 
 //https://gainsight.udemy.com/course/modern-javascript-from-the-beginning/learn/lecture/8757278#overview
 document.addEventListener('DOMContentLoaded', function () {
+
+
     let m = document.getElementById('paymentbutton');
     //let m = document.querySelector('main');
     addButton(m);
@@ -418,7 +491,7 @@ function addPaymentStatus(parent) {
     p.addEventListener('purchaseinitiated', purchasedone);
     p.dispatchEvent(purchaseinitiated);
     setTimeout(printreciept, 3000);
-    
+
 
 }
 
@@ -428,7 +501,7 @@ function purchasedone(ev) {
     // Write your PX code here to track the custom events 
     aptrinsic('track', 'purchaseinitiated', {
         itemName: ev.detail.itemName,
-        itemSize: ev.detail.itemSize
+        Validity: ev.detail.Validity
     });
 }
 
@@ -438,20 +511,25 @@ function printreciept() {
     var p1 = document.getElementById("tStatus");
     document.addEventListener('transactionsuccess', transactiondone);
     document.dispatchEvent(transactionsuccess);
-     p1.textContent="transactionsuccess"
-     let p2 = document.createElement('p');
-     p2.setAttribute("d", "Feedback");
-     p2.setAttribute("class", "btn btn-warning");
-     p2.textContent="Feedback"
-     p1.appendChild(p2);
-     p2.addEventListener('feedback',feedback_triggered);
-     p2.dispatchEvent(feedback);
-     
+    p1.textContent = "transactionsuccess"
+    let p2 = document.createElement('p');
+    p2.setAttribute("d", "Feedback");
+    p2.setAttribute("class", "btn btn-warning");
+    p2.textContent = "Feedback"
+    p1.appendChild(p2);
+    p2.addEventListener('feedback', feedback_triggered);
+    p2.dispatchEvent(feedback);
+
 }
 
 
-function feedback_triggered(){
+function feedback_triggered() {
     aptrinsic('track', 'feedback given');
+}
+
+function triggersurvey() {
+    aptrinsic('track', 'triggerNPS');
+
 }
 
 function transactiondone(ev1) {
@@ -473,18 +551,13 @@ function deleteAllCookies() {
 }
 
 function showKCB1() {
-    aptrinsic('bot', 'start', {
+    aptrinsic('bot', 'show', {
         id: "3d8b06d9-06ea-4518-8ef2-78564a5a173e"
     }); // We can also specific ID
+    // This is for Embeded KCB using UI Element
 
 }
 
-function showKCB2() {
-    aptrinsic('bot', 'start', {
-        id: "9ba7fb81-e8d1-4ec2-9b7c-36bf643e9981"
-    }); // We can also specific ID
-
-}
 
 
 function captureonlyforsession() {
