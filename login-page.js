@@ -46,7 +46,6 @@ window['_fs_namespace'] = 'FS';
 //login function
     const loginForm = document.getElementById("login-form");
     const loginErrorMsg = document.getElementById("login-error-msg");
-  
 
     function signIn(){
       const username = loginForm.username.value;
@@ -179,6 +178,14 @@ window['_fs_namespace'] = 'FS';
 //feedback function
 function feedback(){
   document.getElementById("feedback").innerHTML = "Feedback Button is Clicked";
+}
+
+function zero(){
+  document.getElementById("number").innerHTML = "0";
+}
+
+function one(){
+  document.getElementById("number").innerHTML = "1";
 }
 
 //logout function
