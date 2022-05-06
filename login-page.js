@@ -73,7 +73,6 @@ window['_fs_namespace'] = 'FS';
         window.location.href="signin.html"
 
         if(username=="ankita"){
-          document.getElementById("number").innerHTML = "0";
           //passing user and account objects:
         aptrinsic("identify",
         {
@@ -90,7 +89,6 @@ window['_fs_namespace'] = 'FS';
         }
 
         if(username=="anku"){
-          document.getElementById("number").innerHTML = "1";
           //passing user and account objects:
         aptrinsic("identify",
         {
@@ -182,13 +180,13 @@ function feedback(){
   document.getElementById("feedback").innerHTML = "Feedback Button is Clicked";
 }
 
-//function zero(){
- // document.getElementById("number").innerHTML = "0";
-//}
+function zero(){
+  document.getElementById("number").innerHTML = "0";
+}
 
-//function one(){
-  //document.getElementById("number").innerHTML = "1";
-//}
+function one(){
+  document.getElementById("number").innerHTML = "1";
+}
 
 //logout function
 function logout(){
