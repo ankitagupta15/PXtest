@@ -182,10 +182,13 @@ function feedback(){
 
 function zero(){
   document.getElementById("number").innerHTML = "0";
+  aptrinsic('track', 'zero', {"name":"zero"}); 
+
 }
 
 function one(){
   document.getElementById("number").innerHTML = "1";
+  aptrinsic('track', 'one', {"name":"one"}); 
 }
 
 //logout function
