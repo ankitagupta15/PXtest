@@ -66,6 +66,7 @@ window['_fs_namespace'] = 'FS';
         ID5: "5",
         ID10: "10"
     }
+    const programID= "1234"
 
       if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123") || (username === "mishti" && password === "aaa") || (username === "Pratap" && password === "aaa")) {
 
@@ -79,7 +80,8 @@ window['_fs_namespace'] = 'FS';
           //User Fields
          "id": userId.ID1, // Required for logged in app users
          "firstName": username,
-         "paidUser": true
+         "paidUser": true,
+         "program": programID
         },
         {
             //Account Fields
