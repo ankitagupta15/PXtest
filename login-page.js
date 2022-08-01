@@ -97,6 +97,7 @@ window['_fs_namespace'] = 'FS';
           //User Fields
          "id": userId.ID2, // Required for logged in app users
          "firstName": username,
+         "email":"akgupta@gainsight.com"
         },
         {
             //Account Fields
