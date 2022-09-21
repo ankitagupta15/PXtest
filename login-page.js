@@ -186,6 +186,7 @@ function feedback(){
 function zero(){
   document.getElementById("number").innerHTML = "0";
   aptrinsic('track', 'zero', {"name":"zero"}); 
+  aptrinsic('set', 'globalContext', {"GCID" : 1234});
 
 }
 
