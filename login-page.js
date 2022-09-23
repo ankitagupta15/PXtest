@@ -200,6 +200,8 @@ function apiCall() {
   xhttp.onreadystatechange = function() {
        if (this.readyState == 4 && this.status == 200) {
            alert(this.responseText);
+       }else{
+        alert("ERROR");
        }
   };
   xhttp.open("POST", "https://demo-gssupprod1.gainsightcloud.com/v2/cockpit/cta/", true);
