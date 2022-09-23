@@ -195,6 +195,36 @@ function one(){
   aptrinsic('track', 'one', {"name":"one"}); 
 }
 
+function apiCall() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+       if (this.readyState == 4 && this.status == 200) {
+           alert(this.responseText);
+       }
+  };
+  xhttp.open("POST", "https://demo-gssupprod1.gainsightcloud.com/v2/cockpit/cta/", true);
+  xhttp.setRequestHeader("Content-type", "application/json");
+  xhttp.setRequestHeader("accesskey", "b95b087d-e38c-430f-a7d5-ed272888c879");
+  xhttp.send({
+      "requests": [
+          {
+              "record": {
+              
+                  "Name": "Too many Support Tickets open for customer via PX",
+                 // "SFDCID": "TZHYUJB8QBNHYUIIY",//Used to Resolve the CompanyID
+                 "OwnerId":"1P01CJ1JNHV8EEATI004RNBLLWPZ98UINC63",
+                  //"OwnerEmail": "hsharma@gainsight.com", //Used to Resolve the OwnerID
+                  "DueDate": "2022-10-10",
+                  "type": "Risk",               //Pass Name of CTA Type
+                  "reason": "Support Risk",     //Pass Name of CTA Reason
+                  "status": "New",              //Pass Name of CTA Status
+                  "priority": "High"           //Pass Name of CTA Priority
+              },
+          }
+      ],
+  });
+}
+
 //logout function
 function logout(){
     document.getElementById("logout").addEventListener("click", a);
