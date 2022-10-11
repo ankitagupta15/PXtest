@@ -192,10 +192,10 @@ function zero(){
 
 function one(){
   document.getElementById("number").innerHTML = "1";
-  aptrinsic('track', 'one', {"name":"one"}); 
+  aptrinsic('track', 'one', {"name":"one","is":true,"type":"test"}); 
 }
 
-function apiCall() {
+/*function apiCall() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
        if (this.readyState == 4 && this.status == 200) {
@@ -225,7 +225,7 @@ function apiCall() {
           }
       ],
   });
-}
+}*/
 
 //logout function
 function logout(){
