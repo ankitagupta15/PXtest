@@ -192,7 +192,7 @@ function zero(){
 
 function one(){
   document.getElementById("number").innerHTML = "1";
-  aptrinsic('track', 'one', {"name":"one","is":true,"type":"test"}); 
+  aptrinsic('track', 'one', {"name":"one"}); 
 }
 
 /*function apiCall() {
