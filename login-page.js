@@ -19,7 +19,7 @@
   );*/
 
   //VWO code
-  window._vwo_code = window._vwo_code || (function() {
+ /* window._vwo_code = window._vwo_code || (function() {
     var account_id = 652975,
         version = 1.3,
         settings_tolerance = 2000,
@@ -27,7 +27,7 @@
         use_existing_jquery = false,
         is_spa = 1,
         hide_element = 'body',
-        /* DO NOT EDIT BELOW THIS LINE */
+       // DO NOT EDIT BELOW THIS LINE 
         f = false,
         d = document,
         code = {
@@ -77,7 +77,7 @@
         };
     window._vwo_settings_timer = code.init();
     return code;
-}());
+}());*/
 
   
 //fullstory code
