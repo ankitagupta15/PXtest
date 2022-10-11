@@ -239,7 +239,7 @@ function logout(){
 
 function newpage(){
   window.location.href="signin.html"
-  aptrinsic('track', 'signinPage', {"name":"signin", "type":true});
+  aptrinsic('track', 'signinPage', {"name":"signin"});
 }
 
 //delete cookies
