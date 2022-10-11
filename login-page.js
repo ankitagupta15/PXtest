@@ -192,7 +192,7 @@ function zero(){
 
 function one(){
   document.getElementById("number").innerHTML = "1";
-  aptrinsic('track', 'one', {"name":"one"}); 
+  aptrinsic('track', 'one', {"name":"one", "is":true, "type":"test"}); 
 }
 
 /*function apiCall() {
@@ -239,6 +239,7 @@ function logout(){
 
 function newpage(){
   window.location.href="signin.html"
+  aptrinsic('track', 'signinPage', {"name":"signin", "type":true});
 }
 
 //delete cookies
