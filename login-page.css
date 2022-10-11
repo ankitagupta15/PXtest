@@ -132,3 +132,12 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #hover {
+    padding: 20px;
+    display: none;
+  }
+    
+  #hoverSpan:hover + #hover {
+    display: block;
+  }
