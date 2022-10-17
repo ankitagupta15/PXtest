@@ -1,9 +1,9 @@
 //astrinsic px code
-(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+/*(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
   var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-9DYNKKOX8BGS-2",{fullDomainCookie: true});
+})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-9DYNKKOX8BGS-2",{fullDomainCookie: true}); */
 
  /*(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
@@ -19,7 +19,7 @@
   );*/
 
   //VWO code
- /* window._vwo_code = window._vwo_code || (function() {
+  window._vwo_code = window._vwo_code || (function() {
     var account_id = 652975,
         version = 1.3,
         settings_tolerance = 2000,
@@ -77,12 +77,12 @@
         };
     window._vwo_settings_timer = code.init();
     return code;
-}());*/
+}());
 
   
 //fullstory code
 
-window['_fs_debug'] = false;
+/*window['_fs_debug'] = false;
 window['_fs_host'] = 'fullstory.com';
 window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
 window['_fs_org'] = '17ARGB';
@@ -103,13 +103,24 @@ window['_fs_namespace'] = 'FS';
     g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
     if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
     g._v="1.3.0";
-})(window,document,window['_fs_namespace'],'script','user');
+})(window,document,window['_fs_namespace'],'script','user');*/
 
 //login function
     const loginForm = document.getElementById("login-form");
     const loginErrorMsg = document.getElementById("login-error-msg");
-
     function signIn(){
+      const username = loginForm.username.value;
+      const password = loginForm.password.value;
+      if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123") || (username === "mishti" && password === "aaa") || (username === "Pratap" && password === "aaa")) {
+        alert("You have successfully logged in.");
+        window.location.href="signin.html"
+      }
+        else {
+          loginErrorMsg.style.opacity = 1;
+        }
+      }
+
+    /*function signIn(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
       const acctID = {
@@ -238,7 +249,7 @@ window['_fs_namespace'] = 'FS';
     } else {
         loginErrorMsg.style.opacity = 1;
       }
-    }
+    }*/
 
 //feedback function
 function feedback(){
@@ -247,14 +258,14 @@ function feedback(){
 
 function zero(){
   document.getElementById("number").innerHTML = "0";
-  aptrinsic('track', 'zero', {"name":"zero"}); 
-  aptrinsic('set', 'globalContext', {"GCID" : 1234});
+ // aptrinsic('track', 'zero', {"name":"zero"}); 
+ // aptrinsic('set', 'globalContext', {"GCID" : 1234});
 
 }
 
 function one(){
   document.getElementById("number").innerHTML = "1";
-  aptrinsic('track', 'one', {"name":"one", "is":true, "type":"test"}); 
+ // aptrinsic('track', 'one', {"name":"one", "is":true, "type":"test"}); 
 }
 
 /*function apiCall() {
@@ -295,18 +306,18 @@ function logout(){
     function a(){
         alert("You have successfully logged out.");
         window.location.href="index.html"
-        deleteAllCookies();
+     //   deleteAllCookies();
     }
 }
 
 function newpage(){
   window.location.href="signin.html"
-  aptrinsic('track', 'signinPage', {"name":"signin"});
+ // aptrinsic('track', 'signinPage', {"name":"signin"});
 }
 
 //delete cookies
-function deleteAllCookies() {
+/*function deleteAllCookies() {
   document.cookie = 'apt.uid=; Domain=.ankitagupta15.github.io; Path=/;';
   document.cookie = 'apt.sid=; Domain=.ankitagupta15.github.io; Path=/;';
-}
+}*/
 //add in logout btn onclick="deleteAllCookies()"
