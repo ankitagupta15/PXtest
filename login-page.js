@@ -210,7 +210,7 @@ function one(){
 }
 
 function testButton(){
-  document.getElementById("test").innerHTML = "1";
+  document.getElementById("test").innerHTML = "Test Button is clicked";
   aptrinsic('track', 'testButtonClicked', {"name":"testButtonClicked"}); 
 }
 
