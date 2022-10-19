@@ -209,6 +209,11 @@ function one(){
   aptrinsic('track', 'one', {"name":"one", "is":true, "type":"test"}); 
 }
 
+function testButton(){
+  document.getElementById("test").innerHTML = "1";
+  aptrinsic('track', 'testButtonClicked', {"name":"testButtonClicked"}); 
+}
+
 /*function apiCall() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
