@@ -18,41 +18,42 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_first_name', 'Ankita');
           webengage.user.setAttribute('we_last_name', 'Gupta');
           webengage.user.setAttribute('we_phone', '9619903182');
+          webengage.user.setAttribute('Date of Birth', '15-10-1996');
       }
 
       if(username == "sid"){
         webengage.user.setAttribute('we_email', 'pndsiddharth@gmail.com');
         webengage.user.setAttribute('we_first_name', 'Siddharth');
         webengage.user.setAttribute('we_last_name', 'Pandey');
-        webengage.user.setAttribute('we_phone', '9833346778');
+        webengage.user.setAttribute('Date of Birth', '23-09-1996');
     }
 
     if(username == "lakshya"){
       webengage.user.setAttribute('we_email', 'glakshya01@gmail.com');
       webengage.user.setAttribute('we_first_name', 'Lakshya');
       webengage.user.setAttribute('we_last_name', 'Gupta');
-      webengage.user.setAttribute('we_phone', '7715973811');
+      webengage.user.setAttribute('Date of Birth', '01-12-2004');
   }
 
   if(username == "neha"){
     webengage.user.setAttribute('we_email', 'gneha0509@gmail.com');
     webengage.user.setAttribute('we_first_name', 'Neha');
     webengage.user.setAttribute('we_last_name', 'Gupta');
-    webengage.user.setAttribute('we_phone', '9819638848');
+    webengage.user.setAttribute('Date of Birth', '05-09-1993');
 }
 
 if(username == "mishti"){
   webengage.user.setAttribute('we_email', 'mishti@gmail.com');
   webengage.user.setAttribute('we_first_name', 'Mishti');
   webengage.user.setAttribute('we_last_name', 'Gupta');
-  webengage.user.setAttribute('we_phone', '9076002408');
+  webengage.user.setAttribute('Date of Birth', '27-09-2021');
 }
 
 if(username == "pratap"){
   webengage.user.setAttribute('we_email', 'pratapchauhan97@gmail.com');
   webengage.user.setAttribute('we_first_name', 'Pratap');
   webengage.user.setAttribute('we_last_name', 'Chauhan');
-  webengage.user.setAttribute('we_phone', '8693822070');
+  webengage.user.setAttribute('Date of Birth', '05-01-1997');
 }
        
         alert("You have successfully logged in.");
