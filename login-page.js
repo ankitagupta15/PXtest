@@ -11,7 +11,50 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
     function signIn(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
-      if ((username === "ankita" && password === "123") || (username=== "anku" && password === "123") || (username==="gupta" && password === "123") || (username==="a" && password === "123") || (username === "mishti" && password === "aaa") || (username === "Pratap" && password === "aaa")) {
+      if ((username === "ankita" && password === "123") || (username=== "sid" && password === "123") || (username==="lakshya" && password === "123") || (username==="neha" && password === "123") || (username === "mishti" && password === "123") || (username === "Pratap" && password === "123")) {
+        webengage.user.login(username);
+        if(username == "ankita"){
+          webengage.user.setAttribute('we_email', 'gankita009@gmail.com');
+          webengage.user.setAttribute('we_first_name', 'Ankita');
+          webengage.user.setAttribute('we_last_name', 'Gupta');
+          webengage.user.setAttribute('we_phone', '9619903182');
+      }
+
+      if(username == "sid"){
+        webengage.user.setAttribute('we_email', 'pndsiddharth@gmail.com');
+        webengage.user.setAttribute('we_first_name', 'Siddharth');
+        webengage.user.setAttribute('we_last_name', 'Pandey');
+        webengage.user.setAttribute('we_phone', '9833346778');
+    }
+
+    if(username == "lakshya"){
+      webengage.user.setAttribute('we_email', 'glakshya01@gmail.com');
+      webengage.user.setAttribute('we_first_name', 'Lakshya');
+      webengage.user.setAttribute('we_last_name', 'Gupta');
+      webengage.user.setAttribute('we_phone', '7715973811');
+  }
+
+  if(username == "neha"){
+    webengage.user.setAttribute('we_email', 'gneha0509@gmail.com');
+    webengage.user.setAttribute('we_first_name', 'Neha');
+    webengage.user.setAttribute('we_last_name', 'Gupta');
+    webengage.user.setAttribute('we_phone', '9819638848');
+}
+
+if(username == "mishti"){
+  webengage.user.setAttribute('we_email', 'mishti@gmail.com');
+  webengage.user.setAttribute('we_first_name', 'Mishti');
+  webengage.user.setAttribute('we_last_name', 'Gupta');
+  webengage.user.setAttribute('we_phone', '9076002408');
+}
+
+if(username == "pratap"){
+  webengage.user.setAttribute('we_email', 'pratapchauhan97@gmail.com');
+  webengage.user.setAttribute('we_first_name', 'Pratap');
+  webengage.user.setAttribute('we_last_name', 'Chauhan');
+  webengage.user.setAttribute('we_phone', '8693822070');
+}
+       
         alert("You have successfully logged in.");
         window.location.href="signin.html"
       }
@@ -48,10 +91,10 @@ function logout(){
     function a(){
         alert("You have successfully logged out.");
         window.location.href="index.html"
+        webengage.user.logout();
     }
 }
 
 function newpage(){
   window.location.href="signin.html"
-  aptrinsic('track', 'signinPage', {"name":"signin"});
 }
