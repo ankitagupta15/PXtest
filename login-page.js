@@ -103,7 +103,7 @@ function logout(){
 
 function newpage(){
   window.location.href="signin.html"
-  webengage.track("Feedback Button clicked", {
-    "UserName" : username,
+  webengage.track('Feedback Button clicked', {
+    'isClicked' : true,
 });
 }
