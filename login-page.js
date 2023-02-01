@@ -72,6 +72,9 @@ if(username == "pratap"){
 //feedback function
 function feedback(){
   document.getElementById("feedback").innerHTML = "Feedback Button is Clicked";
+  webengage.track('Feedback Button clicked', {
+    'isClicked' : true,
+});
 }
 
 function zero(){
@@ -88,7 +91,9 @@ function testButton(){
 
 
 function about(){
-  aptrinsic('set', 'globalContext', {"GCtest" : true});
+  webengage.track('AboutPageView', {
+    'isClicked' : true,
+});
 }
 
 //logout function
@@ -103,7 +108,7 @@ function logout(){
 
 function newpage(){
   window.location.href="signin.html"
-  webengage.track('Feedback Button clicked', {
+  webengage.track('GoToHome', {
     'isClicked' : true,
 });
 }
