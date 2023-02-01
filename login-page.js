@@ -79,7 +79,7 @@ else if(username == "pratap"){
 function feedback(){
   document.getElementById("feedback").innerHTML = "Feedback Button is Clicked";
   webengage.track('Feedback Button clicked', {
-    'isClicked' : true,
+    'isClicked' : true
 });
 }
 
@@ -98,7 +98,19 @@ function testButton(){
 
 function about(){
   webengage.track('AboutPageView', {
-    'isClicked' : true,
+    'isClicked' : true
+});
+}
+
+function signin(){
+  webengage.track('MainPageView', {
+    'isClicked' : true
+});
+}
+
+function contact(){
+  webengage.track('ContactPageView', {
+    'isClicked' : true
 });
 }
 
@@ -115,6 +127,6 @@ function logout(){
 function newpage(){
   window.location.href="signin.html"
   webengage.track('GoToHome', {
-    'isClicked' : true,
+    'isClicked' : true
 });
 }
