@@ -22,7 +22,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_gender', 'female');
       }
 
-      if(username == "sid"){
+      else if(username == "sid"){
         webengage.user.setAttribute('we_email', 'pndsiddharth@gmail.com');
         webengage.user.setAttribute('we_first_name', 'Siddharth');
         webengage.user.setAttribute('we_last_name', 'Pandey');
@@ -31,7 +31,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
         webengage.user.setAttribute('we_gender', 'male');
     }
 
-    if(username == "lakshya"){
+    else if(username == "lakshya"){
       webengage.user.setAttribute('we_email', 'glakshya01@gmail.com');
       webengage.user.setAttribute('we_first_name', 'Lakshya');
       webengage.user.setAttribute('we_last_name', 'Gupta');
@@ -40,7 +40,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
       webengage.user.setAttribute('we_gender', 'male');
   }
 
-  if(username == "neha"){
+  else if(username == "neha"){
     webengage.user.setAttribute('we_email', 'gneha0509@gmail.com');
     webengage.user.setAttribute('we_first_name', 'Neha');
     webengage.user.setAttribute('we_last_name', 'Gupta');
@@ -49,7 +49,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
     webengage.user.setAttribute('we_gender', 'female');
 }
 
-if(username == "mishti"){
+else if(username == "mishti"){
   webengage.user.setAttribute('we_email', 'mishti@gmail.com');
   webengage.user.setAttribute('we_first_name', 'Mishti');
   webengage.user.setAttribute('we_last_name', 'Gupta');
@@ -58,7 +58,7 @@ if(username == "mishti"){
   webengage.user.setAttribute('we_gender', 'female');
 }
 
-else if(username == "pratap"){
+else{
   webengage.user.setAttribute('we_email', 'pratapchauhan97@gmail.com');
   webengage.user.setAttribute('we_first_name', 'Pratap');
   webengage.user.setAttribute('we_last_name', 'Chauhan');
