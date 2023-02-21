@@ -50,7 +50,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
 }
 
 else if(username == "mishti"){
-  webengage.user.setAttribute('we_email', 'mishti@gmail.com');
+  webengage.user.setAttribute('we_email', 'guptafamily.030@gmail.com');
   webengage.user.setAttribute('we_first_name', 'Mishti');
   webengage.user.setAttribute('we_last_name', 'Gupta');
   webengage.user.setAttribute('we_phone', '90760022408');
