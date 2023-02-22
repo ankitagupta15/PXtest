@@ -143,8 +143,16 @@ function one(){
   document.getElementById("number").innerHTML = "1";
 }
 
-function testButton(){
-  document.getElementById("test").innerHTML = "Test Button is clicked";
+function paymentButton(){
+  var amount = document.getElementById("payment").value;
+  if (amount == " " || amount == ""){
+    alert("Please enter amount")
+  }else{
+  document.getElementById("test").innerHTML = "You had made a payment of " + amount ;
+  webengage.track('Payment Made', {
+    'Amount' : amount
+});
+  }
 }
 
 
