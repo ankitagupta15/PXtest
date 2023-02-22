@@ -11,7 +11,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
     function signIn(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
-      if ((username === "ankita" && password === "123") || (username=== "sid" && password === "123") || (username==="lakshya" && password === "123") || (username==="neha" && password === "123") || (username === "mishti" && password === "123") || (username === "Pratap" && password === "123")) {
+      if ((username === "ankita" && password === "123") || (username=== "sid" && password === "123") || (username==="lakshya" && password === "123") || (username==="neha" && password === "123") || (username === "mishti" && password === "123") || (username === "anku" && password === "123") || (username === "Pratap" && password === "123")) {
         webengage.user.login(username);
         if(username == "ankita"){
           webengage.user.setAttribute('we_email', 'gankita009@gmail.com');
@@ -55,6 +55,15 @@ else if(username == "mishti"){
   webengage.user.setAttribute('we_last_name', 'Gupta');
   webengage.user.setAttribute('we_phone', '90760022408');
   webengage.user.setAttribute('Date of Birth', '27-09-2021');
+  webengage.user.setAttribute('we_gender', 'female');
+}
+
+else if(username == "anku"){
+  webengage.user.setAttribute('we_email', 'ankita.gupta@webengage.com');
+  webengage.user.setAttribute('we_first_name', 'Anku');
+  webengage.user.setAttribute('we_last_name', 'Gupta');
+  webengage.user.setAttribute('we_phone', '9619903182');
+  webengage.user.setAttribute('Date of Birth', '15-10-1996');
   webengage.user.setAttribute('we_gender', 'female');
 }
 
