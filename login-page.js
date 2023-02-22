@@ -6,7 +6,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
 */
 
 //firebase
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+ /*   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
    // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
     import { getAuth } from "firebase/auth";
     import { getDatabase } from "firebase/database";
@@ -26,7 +26,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
     const app = initializeApp(firebaseConfig);
    // const analytics = getAnalytics(app);
     const auth = getAuth(app);
-    const database = getDatabase(app);
+    const database = getDatabase(app);*/
 
 
 //login function
@@ -36,7 +36,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
       const username = loginForm.username.value;
       const password = loginForm.password.value;
       
-      if (username == false || password == false){
+     /* if (username == false || password == false){
         loginErrorMsg.style.opacity = 1;
       }
       //firebase login
@@ -51,10 +51,10 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
         var error_message = error.message;
         alert(error_message)
       })
-    }
+    }*/
 
 
-    /*  if ((username === "ankita" && password === "123") || (username=== "sid" && password === "123") || (username==="lakshya" && password === "123") || (username==="neha" && password === "123") || (username === "mishti" && password === "123") || (username === "anku" && password === "123") || (username === "Pratap" && password === "123")) {
+     if ((username === "ankita" && password === "123") || (username=== "sid" && password === "123") || (username==="lakshya" && password === "123") || (username==="neha" && password === "123") || (username === "mishti" && password === "123") || (username === "anku" && password === "123") || (username === "Pratap" && password === "123")) {
         webengage.user.login(username);
         if(username == "ankita"){
           webengage.user.setAttribute('we_email', 'gankita009@gmail.com');
@@ -125,7 +125,7 @@ else{
         else {
           loginErrorMsg.style.opacity = 1;
         }
-      }*/
+      }
 
 //feedback function
 function feedback(){
