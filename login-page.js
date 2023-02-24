@@ -56,6 +56,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
 
      if ((username === "ankita" && password === "123") || (username=== "sid" && password === "123") || (username==="lakshya" && password === "123") || (username==="neha" && password === "123") || (username === "mishti" && password === "123") || (username === "anku" && password === "123") || (username === "Pratap" && password === "123")) {
         webengage.user.login(username);
+        sessionStorage.setItem('loggedIn', true);
         if(username == "ankita"){
           webengage.user.setAttribute('we_email', 'gankita009@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Ankita');
@@ -203,3 +204,28 @@ function newpage(){
     'isClicked' : true
 });
 }
+
+// function to check if user is logged in
+function isLoggedIn() {
+  const loggedIn = sessionStorage.getItem('loggedIn');
+  if (loggedIn === 'true') {
+    return true;
+  }
+  return false;
+}
+
+// function to redirect to login page if not logged in
+function requireLogin() {
+  if (!isLoggedIn()) {
+    window.location.replace('index.html');
+  }
+}
+
+// add event listener to logout button
+function logout() {
+  sessionStorage.setItem('loggedIn', false);
+  window.location.replace('index.html');
+}
+
+// redirect to login page if not logged in
+requireLogin();
