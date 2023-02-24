@@ -73,7 +73,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
     }
       alert("You have successfully logged in.");
       window.location.replace="signin.html"
-      sessionStorage.setItem('loggedIn', true);
+   //   sessionStorage.setItem('loggedIn', true);
       }else {
           loginErrorMsg.style.opacity = 1;
         }
@@ -154,7 +154,7 @@ function newpage(){
     'isClicked' : true
 });
 }
-
+/*
 // function to check if user is logged in
 function isLoggedIn() {
   const loggedIn = sessionStorage.getItem('loggedIn');
@@ -176,6 +176,4 @@ function logout() {
   sessionStorage.setItem('loggedIn', false);
   window.location.replace('index.html');
 }
-
-// redirect to login page if not logged in
-requireLogin();
+*/
