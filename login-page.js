@@ -63,6 +63,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_phone', '+919619903182');
           webengage.user.setAttribute('Date of Birth', '15-10-1996');
           webengage.user.setAttribute('we_gender', 'female');
+          ebengage.user.setAttribute("age_web", 26);
       }
 
       else if(username == "sid"){
@@ -72,6 +73,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
         webengage.user.setAttribute('we_phone', '9876765432');
         webengage.user.setAttribute('Date of Birth', '23-09-1996');
         webengage.user.setAttribute('we_gender', 'male');
+        ebengage.user.setAttribute("age_web", 26);
     }
 
     else if(username == "lakshya"){
@@ -81,6 +83,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
       webengage.user.setAttribute('we_phone', '+917715973811');
       webengage.user.setAttribute('Date of Birth', '01-12-2004');
       webengage.user.setAttribute('we_gender', 'male');
+      ebengage.user.setAttribute("age_web", 18);
   }
 
   else if(username == "neha"){
@@ -90,6 +93,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
     webengage.user.setAttribute('we_phone', '+919819638848');
     webengage.user.setAttribute('Date of Birth', '05-09-1993');
     webengage.user.setAttribute('we_gender', 'female');
+    ebengage.user.setAttribute("age_web", 29);
 }
 
 else if(username == "mishti"){
@@ -99,6 +103,7 @@ else if(username == "mishti"){
   webengage.user.setAttribute('we_phone', '90760022408');
   webengage.user.setAttribute('Date of Birth', '27-09-2021');
   webengage.user.setAttribute('we_gender', 'female');
+  ebengage.user.setAttribute("age_web", 01);
 }
 
 else if(username == "anku"){
@@ -108,6 +113,7 @@ else if(username == "anku"){
   webengage.user.setAttribute('we_phone', '9619903182');
   webengage.user.setAttribute('Date of Birth', '15-10-1996');
   webengage.user.setAttribute('we_gender', 'female');
+  ebengage.user.setAttribute("age_web", 26);
 }
 
 else{
@@ -117,6 +123,7 @@ else{
   webengage.user.setAttribute('we_phone', '+918693822070');
   webengage.user.setAttribute('Date of Birth', '05-01-1997');
   webengage.user.setAttribute('we_gender', 'male');
+  ebengage.user.setAttribute("age_web", 26);
 }
        
         alert("You have successfully logged in.");
