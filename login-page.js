@@ -137,10 +137,16 @@ function feedback(){
 
 function zero(){
   document.getElementById("number").innerHTML = "0";
+  webengage.track('zeroBtnClicked', {
+    'isClicked' : true
+});
 }
 
 function one(){
   document.getElementById("number").innerHTML = "1";
+  webengage.track('oneBtnClicked', {
+    'isClicked' : true
+});
 }
 
 function paymentButton(){
