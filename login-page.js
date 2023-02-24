@@ -12,7 +12,6 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
 
      if ((username === "ankita" && password === "123") || (username=== "sid" && password === "123") || (username==="lakshya" && password === "123") || (username==="neha" && password === "123") || (username === "mishti" && password === "123") || (username === "anku" && password === "123") || (username === "Pratap" && password === "123")) {
         webengage.user.login(username);
-        sessionStorage.setItem('loggedIn', true);
 
         //Webengage Identification
         if(username == "ankita"){
@@ -73,7 +72,8 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute("age_web", 26);
     }
       alert("You have successfully logged in.");
-      window.location.href="signin.html"
+      window.location.replace="signin.html"
+      sessionStorage.setItem('loggedIn', true);
   }else {
           loginErrorMsg.style.opacity = 1;
         }
