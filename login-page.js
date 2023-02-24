@@ -60,7 +60,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_email', 'gankita009@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Ankita');
           webengage.user.setAttribute('we_last_name', 'Gupta');
-          webengage.user.setAttribute('we_phone', '9619903182');
+          webengage.user.setAttribute('we_phone', '+919619903182');
           webengage.user.setAttribute('Date of Birth', '15-10-1996');
           webengage.user.setAttribute('we_gender', 'female');
       }
@@ -78,7 +78,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
       webengage.user.setAttribute('we_email', 'glakshya01@gmail.com');
       webengage.user.setAttribute('we_first_name', 'Lakshya');
       webengage.user.setAttribute('we_last_name', 'Gupta');
-      webengage.user.setAttribute('we_phone', '7715973811');
+      webengage.user.setAttribute('we_phone', '+917715973811');
       webengage.user.setAttribute('Date of Birth', '01-12-2004');
       webengage.user.setAttribute('we_gender', 'male');
   }
@@ -87,7 +87,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
     webengage.user.setAttribute('we_email', 'gneha0509@gmail.com');
     webengage.user.setAttribute('we_first_name', 'Neha');
     webengage.user.setAttribute('we_last_name', 'Gupta');
-    webengage.user.setAttribute('we_phone', '9819638848');
+    webengage.user.setAttribute('we_phone', '+919819638848');
     webengage.user.setAttribute('Date of Birth', '05-09-1993');
     webengage.user.setAttribute('we_gender', 'female');
 }
@@ -114,7 +114,7 @@ else{
   webengage.user.setAttribute('we_email', 'pratapchauhan97@gmail.com');
   webengage.user.setAttribute('we_first_name', 'Pratap');
   webengage.user.setAttribute('we_last_name', 'Chauhan');
-  webengage.user.setAttribute('we_phone', '8693822070');
+  webengage.user.setAttribute('we_phone', '+918693822070');
   webengage.user.setAttribute('Date of Birth', '05-01-1997');
   webengage.user.setAttribute('we_gender', 'male');
 }
