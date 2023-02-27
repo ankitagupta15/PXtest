@@ -6,7 +6,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
 //login function
     const loginForm = document.getElementById("login-form");
     const loginErrorMsg = document.getElementById("login-error-msg");
-    function signin(){
+    function signIn(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
