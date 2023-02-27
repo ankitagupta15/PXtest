@@ -6,7 +6,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
 //login function
     const loginForm = document.getElementById("login-form");
     const loginErrorMsg = document.getElementById("login-error-msg");
-    function signIn(){
+    function signin(){
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
@@ -21,7 +21,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_phone', '+919619903182');
           webengage.user.setAttribute('Date of Birth', '15-10-1996');
           webengage.user.setAttribute('we_gender', 'female');
-          //webengage.user.setAttribute("age_web", 26);
+          webengage.user.setAttribute("age_web", 26);
         }else if(username == "sid"){
           webengage.user.setAttribute('we_email', 'pndsiddharth@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Siddharth');
@@ -29,7 +29,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_phone', '9876765432');
           webengage.user.setAttribute('Date of Birth', '23-09-1996');
           webengage.user.setAttribute('we_gender', 'male');
-          //webengage.user.setAttribute("age_web", 26);
+          webengage.user.setAttribute("age_web", 26);
         }else if(username == "lakshya"){
           webengage.user.setAttribute('we_email', 'glakshya01@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Lakshya');
@@ -37,7 +37,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_phone', '+917715973811');
           webengage.user.setAttribute('Date of Birth', '01-12-2004');
           webengage.user.setAttribute('we_gender', 'male');
-         // webengage.user.setAttribute("age_web", 18);
+          webengage.user.setAttribute("age_web", 18);
         }else if(username == "neha"){
           webengage.user.setAttribute('we_email', 'gneha0509@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Neha');
@@ -45,7 +45,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_phone', '+919819638848');
           webengage.user.setAttribute('Date of Birth', '05-09-1993');
           webengage.user.setAttribute('we_gender', 'female');
-          //webengage.user.setAttribute("age_web", 29);
+          webengage.user.setAttribute("age_web", 29);
         }else if(username == "mishti"){
           webengage.user.setAttribute('we_email', 'guptafamily.030@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Mishti');
@@ -53,7 +53,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_phone', '90760022408');
           webengage.user.setAttribute('Date of Birth', '27-09-2021');
           webengage.user.setAttribute('we_gender', 'female');
-          //webengage.user.setAttribute("age_web", 01);
+          webengage.user.setAttribute("age_web", 01);
         }else if(username == "anku"){
           webengage.user.setAttribute('we_email', 'ankita.gupta@webengage.com');
           webengage.user.setAttribute('we_first_name', 'Anku');
@@ -61,7 +61,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_phone', '9619903182');
           webengage.user.setAttribute('Date of Birth', '15-10-1996');
           webengage.user.setAttribute('we_gender', 'female');
-         // webengage.user.setAttribute("age_web", 26);
+          webengage.user.setAttribute("age_web", 26);
         }else{
           webengage.user.setAttribute('we_email', 'pratapchauhan97@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Pratap');
@@ -69,11 +69,11 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_phone', '+918693822070');
           webengage.user.setAttribute('Date of Birth', '05-01-1997');
           webengage.user.setAttribute('we_gender', 'male');
-         // webengage.user.setAttribute("age_web", 26);
-    }
+          webengage.user.setAttribute("age_web", 26);
+        }
       alert("You have successfully logged in.");
       window.location.replace="signin.html"
-   //   sessionStorage.setItem('loggedIn', true);
+      sessionStorage.setItem('loggedIn', true);
       }else {
           loginErrorMsg.style.opacity = 1;
         }
@@ -154,7 +154,7 @@ function newpage(){
     'isClicked' : true
 });
 }
-/*
+
 // function to check if user is logged in
 function isLoggedIn() {
   const loggedIn = sessionStorage.getItem('loggedIn');
@@ -176,4 +176,3 @@ function logout() {
   sessionStorage.setItem('loggedIn', false);
   window.location.replace('index.html');
 }
-*/
