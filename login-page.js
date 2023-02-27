@@ -145,6 +145,7 @@ function logout(){
         window.location.href="index.html"
         webengage.user.logout();
         sessionStorage.setItem('loggedIn', false);
+        document.cookie = "cookiename= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
     }
 }
 
