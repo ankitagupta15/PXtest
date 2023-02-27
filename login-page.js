@@ -144,6 +144,7 @@ function logout(){
         alert("You have successfully logged out.");
         window.location.href="index.html"
         webengage.user.logout();
+        sessionStorage.setItem('loggedIn', false);
     }
 }
 
@@ -169,10 +170,4 @@ function requireLogin() {
   if (!isLoggedIn()) {
     window.location.replace('index.html');
   }
-}
-
-// add event listener to logout button
-function logout() {
-  sessionStorage.setItem('loggedIn', false);
-  window.location.replace('index.html');
 }
