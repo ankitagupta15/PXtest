@@ -72,7 +72,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute("age_web", 26);
         }
       alert("You have successfully logged in.");
-      window.location.replace("signin.html");
+      window.location.href="signin.html";
       sessionStorage.setItem('loggedIn', true);
       }else {
           loginErrorMsg.style.opacity = 1;
@@ -168,6 +168,6 @@ function isLoggedIn() {
 // function to redirect to login page if not logged in
 function requireLogin() {
   if (!isLoggedIn()) {
-    window.location.replace('index.html');
+    window.location.href="index.html";
   }
 }
