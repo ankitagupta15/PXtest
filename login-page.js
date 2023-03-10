@@ -73,6 +73,9 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
         }
       alert("You have successfully logged in.");
       window.location.href="signin.html";
+      webengage.track('MainPageView', {
+        'isClicked' : true
+    });
       sessionStorage.setItem('loggedIn', true);
       }else {
           loginErrorMsg.style.opacity = 1;
@@ -119,13 +122,6 @@ function paymentButton(){
 //About page navigation button click function
 function about(){
   webengage.track('AboutPageView', {
-    'isClicked' : true
-});
-}
-
-//Home page navigation button click function
-function signin(){
-  webengage.track('MainPageView', {
     'isClicked' : true
 });
 }
