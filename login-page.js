@@ -23,7 +23,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_gender', 'female');
           webengage.user.setAttribute("age_web", 26);
         }else if(username == "sid"){
-          webengage.user.setAttribute('we_email', 'pndsiddharth@gmail.com');
+          webengage.user.setAttribute('we_email', 'pndsiddharth2309@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Siddharth');
           webengage.user.setAttribute('we_last_name', 'Pandey');
           webengage.user.setAttribute('we_phone', '9876765432');
